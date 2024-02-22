@@ -1,0 +1,2 @@
+acabei não adicionando as imagens no banco de dados para serem carregadas dinamicamente em cada album, porém a lógica é a mesma utilizada durante todo o trabalho,
+fiz dessa maneira simplesmente para facilitar o trabalho braçal, visto que é apenas ficar adicionando links dentro da estrutura do json pelo replit.

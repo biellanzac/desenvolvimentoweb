@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <title>Álbum</title>
+
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark pb-5">
+
+            <a class="navbar-brand d-flex align-items-center pl-5" href="./index.html">
+                <strong class="ml-2 pt-4">Logo</strong>
+            </a>
+
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <section class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto pt-4 pr-5">
+                    <li class="nav-item active pr-3">
+                        <a class="nav-link" href="#">Link 1</a>
+                    </li>
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="#">Link 2</a>
+                    </li>
+                    <li class="nav-item pr-3">
+                        <a class="nav-link" href="#">Link 3</a>
+                    </li>
+                </ul>
+            </section>
+
+        </nav>
+
+    </header>
+
+    <h3 class="ml-5 mt-3 font-weight-bold" id="titulo"></h3>
+    <hr class="ml-5 mr-5 mt-0 border-dark border-3">
+
+    <section class="section-album">
+        <img src="" alt="#" class="img-fluid" width="200" height="200" id="urlimg">
+        <div class="container">
+            <div class="box">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <strong>Destaque:</strong><br>
+                        <p id="descricao"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-7">
+                        <strong>Localização:</strong><br>
+                        <p id="localizacao"></p>
+                    </div>
+                    <div class="col-sm-5">
+                        <strong>Data de Registro:</strong><br>
+                        <p id="data"></p>
+                    </div>
+                    <div class="col-sm-3">
+                        <button class="btn btn-dark"><i class="bi bi-star-fill pr-2"></i>Destaque</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h3 class="ml-5 mt-3 font-weight-bold ">Itens (fotos/vídeos)</h3>
+    <hr class="ml-5 mr-5 mt-0 border-dark border-3">
+
+    <section class="gallery min-vh-100">
+        <div class="container-lg">
+            <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4">
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Gallery1" width="210" height="100" id="image">
+                </div>
+
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Gallery2" width="210" height="100" id="image">
+                </div>
+
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Gallery3" width="210" height="100" id="image">
+                </div>
+
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Gallery4" width="210" height="100" id="image">
+                </div>
+
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Gallery5" width="210" height="100" id="image">
+                </div>
+
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Gallery6" width="210" height="100" id="image">
+                </div>
+
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Gallery7" width="210" height="100" id="image">
+                </div>
+
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Gallery8" width="210" height="100" id="image">
+                </div>
+
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Gallery9" width="210" height="100" id="image">
+                </div>
+
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Galleryx" width="210" height="100" id="image">
+                </div>
+
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Galleryy" width="210" height="100" id="image">
+                </div>
+
+                <div class="col">
+                    <img src=""
+                        class="gallery-item img-fluid" alt="Galleryz" width="210" height="100" id="image">
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="modal fade" id="gallery-popup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/1.jpg" class="modal-img" alt="Modal Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Extrai o parâmetro 'id' da URL
+            const urlParams = new URLSearchParams(window.location.search);
+            const albumId = urlParams.get('id');
+    
+            // Monta a URL da API com base no 'id' da URL
+            const apiUrl = `https://jsondiw--gabrielfilipe10.repl.co/album/${albumId}`;
+    
+            // Faz a solicitação à API usando o método fetch
+            fetch(apiUrl)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`Erro na solicitação: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => preencherDadosNoHTML(data))
+                .catch(error => console.error('Erro ao obter dados do JSON', error));
+        });
+    
+        function preencherDadosNoHTML(data) {
+            // Preencher os elementos HTML com base nos dados da API
+            document.getElementById('urlimg').src = data.urlimg;
+            document.getElementById('titulo').textContent = data.titulo;
+            document.getElementById('descricao').textContent = data.descricao;
+            document.getElementById('localizacao').textContent = 'Localização: ' + data.localizacao;
+            document.getElementById('data').textContent = 'Data de Registro: ' + data.data;
+        }
+    </script>
+    
+    <script>
+        document.addEventListener("click", function (e) {
+            if (e.target.classList.contains("gallery-item")) {
+                const src = e.target.getAttribute("src");
+                document.querySelector(".modal-img").src = src;
+                const myModal = new bootstrap.Modal(document.getElementById('gallery-popup'));
+                myModal.show();
+            }
+        })
+    </script>
+
+</body>
